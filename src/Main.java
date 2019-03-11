@@ -69,7 +69,7 @@ public class Main {
 	        }
 		}
 		catch (Exception e){
-			System.out.println("Something went wrong: " + e.toString());
+			System.out.println("Error: " + e.toString());
 		}
 	}
 }

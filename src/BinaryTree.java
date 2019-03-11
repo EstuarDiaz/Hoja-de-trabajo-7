@@ -48,11 +48,15 @@ public class BinaryTree<E>
             return right == null ? null : right.get( key );
         }
     }
-    
+    /*
+     * Devuleve true si y solo si existe un nodo con esa llave en el arbol 
+     */
     public Boolean isKey(E key) {
     	return this.get(key) != null;
     }
-    
+    /*
+     * Imprime en consola las asociaciones del arbol de manera ordenada por la llave
+     */
 	public void InOrder() {
 		if(this.left != null) this.left.InOrder();
 	   	 System.out.println("(" + this.node.getKey() + ", " + this.node.getValue() + ")");
